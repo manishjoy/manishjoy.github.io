@@ -32,4 +32,11 @@ jQuery(function ($) {
         }
         
     });
+    
+    $(document).click(function(evt) {
+        var target = evt.target.className;
+        if(!(evt.target.hasAttribute('title') || (typeof $(evt.target).closest('[title]').attr('title') != 'undefined' && $(evt.target).closest('[title]').attr('title').length))) {
+            $(".title-tooltip").remove();
+        }
+    });
 }); // JQuery end

@@ -21,12 +21,15 @@ jQuery(function ($) {
     // --------------------------------------------------------------------
     // For Mobile Titles
     // --------------------------------------------------------------------
-
+    
     $("[title]").click(function(e) {
-        $(".title-tooltip").remove();
-        let titleWidth = $(this).attr("title").length * 7.1;
-        $(this).append(
-            '<span class="title-tooltip">' + $(this).attr("title") + "</span>"
-        );
+        if ($(document).width() <= 768) {
+            $(".title-tooltip").remove();
+            let titleWidth = $(this).attr("title").length * 7.1;
+            $(this).append(
+                '<span class="title-tooltip">' + $(this).attr("title") + "</span>"
+            );
+        }
+        
     });
 }); // JQuery end

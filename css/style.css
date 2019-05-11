@@ -616,6 +616,7 @@ button:focus,
     border: 5px solid;
     border-color: transparent transparent #3d3d50 transparent;
     z-index: 98;
-    left: 7px;
+/*     left: 7px; */
     top: -10px;
+    left: calc(2.5rem - 5px);
 }

@@ -618,5 +618,5 @@ button:focus,
     z-index: 98;
 /*     left: 7px; */
     top: -10px;
-    left: calc(2.5rem - 5px);
+    left: calc(2.5rem - 7px);
 }

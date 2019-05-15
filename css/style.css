@@ -299,6 +299,18 @@ button:focus,
 .about-text .contact-section p i {
     margin-right: 5px;
 }
+
+.about-text .photography-link-container a,
+.about-text .photography-link-container a:hover {
+    color: #000;
+    font-family: 'Grand Hotel', cursive;
+}
+.about-text .photography-link-container {
+    font-size: 25px;
+}
+.about-text .photography-link-container {
+    
+}
 .header .btn {
     margin-top : 40px;
     }

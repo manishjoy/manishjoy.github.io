@@ -783,6 +783,53 @@ button:focus,
 .hire-me-container #hiremeModal .list-group-item.contact-option.mail i {
     color: #00A4EF;
 }
+
+.bottom-fixed {
+    position: fixed;
+    left: 0;
+    bottom: -500px;
+    width: 100%;
+    background: rgba(30, 34, 38, 0.8);
+    color: #fff;
+    text-align: center;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.bottom-fixed.active {
+    bottom: 0;
+}
+.bottom-fixed .close-btn {
+    opacity: 1;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+}
+.hireme-btn-container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.hireme-btn-container h2,
+.bottom-fixed a.close-link,
+.bottom-fixed a.close-link:hover {
+    color: #fff;
+}
+.hireme-btn-container .btn.hire-me-btn{
+    background: linear-gradient(to left, #12308b 50%, #595cd0 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.3s ease-in-out;
+    -o-transition: background-position 0.3s ease-in-out;
+    -moz-transition: background-position 0.3s ease-in-out;
+    -webkit-transition: background-position 0.3s ease-in-out;
+    transition: background-position 0.3s ease-in-out;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.hireme-btn-container .btn.hire-me-btn:hover {
+    background-position: left bottom;
+}
 /* Know More */
 .know-more-container > div:nth-child(2) {
     margin-top: 10px;

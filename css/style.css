@@ -731,6 +731,48 @@ button:focus,
 /*-------------------
  * Hire me
  *-------------------*/
+
+.hire-me-sticky {
+    position: fixed;
+    transform: rotate(270deg);
+    transform-origin: right bottom;
+    right: 0;
+    top: 60px;
+    transition: right 0.3s ease-in-out;
+    -o-transition: right 0.3s ease-in-out;
+    -moz-transition: right 0.3s ease-in-out;
+    -webkit-transition: right 0.3s ease-in-out;
+    transition: right 0.3s ease-in-out;
+    -webkit-animation:bounce 1s infinite;
+    z-index: 99;
+}
+.hire-me-sticky:hover {
+    -webkit-animation: none;
+}
+@-webkit-keyframes bounce {
+    0%       { top: 65px; }
+    25%, 75% { top: 60px; }
+    50%      { top: 65px; }
+    100%     { top: 60px; }
+}
+.hire-me-sticky.hide-sticky {
+    right: -100px;
+}
+.hire-me-sticky .hire-me-btn {
+    background: #12308b;
+    color: #ffff;
+}
+@media (max-width : 768px) {
+    .hire-me-sticky{
+        /* color: #12308b;
+        background: #ffff;
+        border-color: #12308b; */
+        -webkit-box-shadow: -13px 0px 24px -6px rgba(0,0,0,0.75);
+        -moz-box-shadow: -13px 0px 24px -6px rgba(0,0,0,0.75);
+        box-shadow: -13px 0px 24px -6px rgba(0,0,0,0.75);
+    }
+}
+
 .hire-me-container .btn.hire-me-btn{
     background: linear-gradient(to left, #12308b 50%, #595cd0 50%);
     background-size: 200% 100%;

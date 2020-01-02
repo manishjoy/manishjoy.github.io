@@ -54,10 +54,12 @@ jQuery(function ($) {
         var scrolledPct = amountscrolled();
         if (scrolledPct <= 25) {
             $('.bottom-fixed').removeClass('active');
+            $('.hire-me-sticky').removeClass('hide-sticky');
         } else {
             var keepClosedToken = _accessCookie('keepclosed');
             if (!keepClosedToken) {
                 $('.bottom-fixed').addClass('active');
+                $('.hire-me-sticky').addClass('hide-sticky');
             }
         }
     });
@@ -93,6 +95,7 @@ jQuery(function ($) {
     $(".bottom-fixed .close-btn, .bottom-fixed .close-link").click(function(e) {
         e.preventDefault();
         $('.bottom-fixed').removeClass('active');
+        $('.hire-me-sticky').removeClass('hide-sticky');
         _createCookie('keepclosed', 'yes', 2);
     });
 }); // JQuery end

@@ -55,11 +55,13 @@ jQuery(function ($) {
         if (scrolledPct <= 25) {
             $('.bottom-fixed').removeClass('active');
             $('.hire-me-sticky').removeClass('hide-sticky');
+            $('body').addClass('show-sticky-hire-btn');
         } else {
             var keepClosedToken = _accessCookie('keepclosed');
             if (!keepClosedToken) {
                 $('.bottom-fixed').addClass('active');
                 $('.hire-me-sticky').addClass('hide-sticky');
+                $('body').removeClass('show-sticky-hire-btn');
             }
         }
     });
@@ -96,6 +98,7 @@ jQuery(function ($) {
         e.preventDefault();
         $('.bottom-fixed').removeClass('active');
         $('.hire-me-sticky').removeClass('hide-sticky');
+        $('body').addClass('show-sticky-hire-btn');
         _createCookie('keepclosed', 'yes', 2);
     });
 }); // JQuery end

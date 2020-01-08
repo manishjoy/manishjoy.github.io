@@ -32,7 +32,35 @@ jQuery(function ($) {
         }
         
     });
+
+    // $(".meter > span").each(function() {
+    //     $(this)
+    //         .data("origWidth", $(this).width())
+    //         .width(0)
+    //         .animate({
+    //             width: $(this).data("origWidth")
+    //         }, 3000);
+    // });
     
+    var $extensionItemElem = $('.row.extension-items .extension-item-container a.extension-item');
+
+    $extensionItemElem.click(function(evt) {
+        evt.preventDefault();
+        $('#supportMeModal').modal('show');
+        var urlToRedirect = $(this).attr('href');
+
+        $(".meter > span").data("origWidth", $(".meter > span").width())
+            .width(0)
+            .animate({
+                width: $('body').width()//$(".meter > span").data("origWidth")
+            }, 3000);
+            console.log('test', $(this).attr('href'));
+
+        setTimeout(function() {
+            window.location.href = urlToRedirect
+        }, 3000);
+    });
+
     $(document).click(function(evt) {
         var target = evt.target.className;
         if(!(evt.target.hasAttribute('title') || (typeof $(evt.target).closest('[title]').attr('title') != 'undefined' && $(evt.target).closest('[title]').attr('title').length))) {

@@ -828,6 +828,24 @@ button:focus,
         bottom: -60px;
     }
 }
+.no-margin {
+    margin-bottom: 0;
+}
+.support-me-content {
+    margin-bottom: 20px;
+}
+
+.support-me-container #supportMeModal .modal-content {
+    border: 2px solid #12308b;
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.support-me-container #supportMeModal .modal-header{
+    border-bottom: 0;
+    padding-bottom: 0;
+}
 
 .hire-me-container .btn.hire-me-btn{
     background: linear-gradient(to left, #12308b 50%, #595cd0 50%);

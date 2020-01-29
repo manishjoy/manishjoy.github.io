@@ -53,12 +53,12 @@ jQuery(function ($) {
             .width(0)
             .animate({
                 width: $('body').width()//$(".meter > span").data("origWidth")
-            }, 3000);
+            }, 7000);
             console.log('test', $(this).attr('href'));
 
         setTimeout(function() {
             window.location.href = urlToRedirect
-        }, 3000);
+        }, 7000);
     });
 
     $(document).click(function(evt) {

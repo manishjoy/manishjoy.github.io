@@ -30,7 +30,7 @@
     <link href="css/fontawesome-free/all.min.css" rel="stylesheet">
 
     <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body id="page-top" class="show-sticky-hire-btn" data-spy="scroll" data-target=".navbar">
 <div id="main-wrapper">
@@ -50,6 +50,17 @@
         <i class="fab fa-magento"></i>&nbsp;&nbsp;<span>Free Magento Extensions</span></a>
 </div> -->
 
+<!-- Dark Mode toggle sticky -->
+<div class="dark-mode-sticky">
+    <button type="button" id="toggleDarkMode" class="btn toggle-dark-mode" title="Enable Dark Mode">
+        <span class="dark-mode-icon ui-mode-icon">
+            <i class="fas fa-moon"></i>
+        </span>
+        <span class="daylight-mode-icon ui-mode-icon">
+            <i class="fas fa-sun"></i>
+        </span>
+    </button>
+</div>
 
 <div class="columns-block container">
 <div class="left-col-block blocks">
@@ -538,6 +549,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/theia-sticky-sidebar.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/dark-mode.js"></script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

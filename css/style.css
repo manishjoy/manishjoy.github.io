@@ -20,8 +20,19 @@ body {
     color       : #3d3d50;
     font-weight : 300;
     background  : url("../img/pattern-bg.png") fixed;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
     }
-
+.dark-mode {
+    color: #6c757d;
+    transition: background-color .2s ease-out!important;
+}
+body.dark-mode {
+    background  : url("../img/pattern-bg-dark.png") fixed;
+}
+.dark-mode .fab {
+    color: #6c757d;
+}
 /* --------------------------------------
  * Global Typography
  *------------------------------------------*/
@@ -30,7 +41,10 @@ h1, h2, h3, h4, h5, h6 {
     margin : 0 0 15px;
     color  : #2b2b3d;
     }
-
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6 {
+    color  : #6c757d;
+    transition: color .2s ease-out!important;
+}
 h1 {
     font-size   : 26px;
     line-height : 1.8em;
@@ -77,7 +91,9 @@ a {
     -o-transition      : all 0.3s ease 0s;
     transition         : all 0.3s ease 0s;
     }
-
+.dark-mode a{
+    color: #007bff;
+}
 a,
 a:active,
 a:focus,
@@ -91,7 +107,10 @@ a:focus {
     text-decoration : none;
     color           : #ff9800;
     }
-
+.dark-mode a:focus,
+.dark-mode a:hover {
+    color: #ff073a;
+}
 p {
     margin-bottom : 20px;
     }
@@ -165,7 +184,12 @@ button:focus,
     margin                 : 60px auto;
     padding                : 0;
     box-shadow             : 0 0 0 1px #eaeaea;
+    transition: box-shadow .2s ease-out!important;
     }
+
+.dark-mode .columns-block {
+    box-shadow : 0 0 0 1px #161625;
+}
 
 .blocks {
     box-sizing : border-box;
@@ -178,15 +202,23 @@ button:focus,
     position     : relative;
     background   : rgba(255, 255, 255, .8);
     border-right : 1px solid #eaeaea;
+    transition: all .2s ease-out!important;
     }
+.dark-mode .left-col-block {
+    background: #212230;
+    border-right: 1px solid #212230;
+}
 
 .right-col-block {
     -webkit-flex : 2 0 0;
     flex         : 2 0 0;
     position     : relative;
     background   : #ffffff;
+    transition: all .2s ease-out!important;
     }
-
+.dark-mode .right-col-block {
+        background: #212230;
+}
 @media (max-width : 768px) {
 
     .columns-block {
@@ -223,6 +255,9 @@ button:focus,
     background-color : #ffffff;
     }
 
+.dark-mode .gray-bg {
+    background-color: #161625;
+}
 /* --------------------
  *  main Wrapper
  * -------------------*/
@@ -236,8 +271,11 @@ button:focus,
 .section-wrapper {
     padding       : 50px;
     border-bottom : 1px solid #eaeaea;
+    transition: border-bottom .2s ease-out!important;
     }
-
+.dark-mode .section-wrapper {
+    border-bottom : 1px solid #212230;
+}
 @media (max-width : 480px) {
     .section-wrapper {
         padding : 30px 20px;
@@ -257,6 +295,10 @@ button:focus,
     font-size: 24px;
     }
 
+.dark-mode .section-title h2 {
+    color: #4c75f2;
+    transition: color .2s ease-out!important;
+}
 /*-----------------------------
  * NAVIGATION & HEADER STYLE
  *-----------------------------*/
@@ -314,8 +356,8 @@ button:focus,
 .about-text .photography-link-container {
     font-size: 25px;
 }
-.about-text .photography-link-container {
-    
+.dark-mode .about-text .photography-link-container {
+    filter: invert(0.70);
 }
 .header .btn {
     margin-top : 40px;
@@ -327,7 +369,9 @@ button:focus,
         text-align    : center;
         border-bottom : 1px solid #ededed;
         }
-
+    .dark-mode .header {
+        border-bottom: 1px solid #1E1E30;
+    }
     .header img {
         margin : 0 auto;
         }
@@ -376,6 +420,10 @@ button:focus,
     border-color : #cccccc;
     }
 
+.dark-mode .social-icon li a,
+.dark-mode .social-icon li a:hover {
+    color: #6c757d;
+}
 /*-------------------
  * Expertise
  *-------------------*/
@@ -711,6 +759,10 @@ button:focus,
     z-index: 99;
     box-shadow: 0 3px 3px rgba(0,0,0,0.15);
     border: 1px solid #fff;
+    left: 0;
+}
+.dark-mode .title-tooltip {
+    border: 1px solid #3d3d50;
 }
 .title-tooltip:before {
     border-bottom-style: solid;
@@ -784,6 +836,11 @@ button:focus,
 .hire-me-sticky .hire-me-btn {
     background: #12308b;
     color: #ffff;
+    transition: all .2s ease-out!important;
+}
+.dark-mode .hire-me-sticky .hire-me-btn {
+    color: #bdbdbd;
+    background: #1e1e30;
 }
 @media (max-width : 768px) {
     body.show-sticky-hire-btn .footer {
@@ -823,6 +880,15 @@ button:focus,
         border-color: #2b3138;
         border-color: rgba(27,31,35,.2);
     }
+    .dark-mode .hire-me-sticky .hire-me-btn {
+        background-image: none;
+        color: #bdbdbd;
+        background: #1E1E30;
+        -moz-box-shadow: 0 10px 35px rgba(0, 0, 0, .1);
+        -webkit-appearance: none !important;
+        -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, .1);
+        box-shadow: 0 10px 35px rgba(33, 33, 47, .1);
+    }
     .hire-me-sticky.hide-sticky {
         right: 0;
         bottom: -60px;
@@ -845,6 +911,27 @@ button:focus,
 .support-me-container #supportMeModal .modal-header{
     border-bottom: 0;
     padding-bottom: 0;
+}
+
+.dark-mode .support-me-container #supportMeModal .modal-content {
+    background-color: #161625;
+}
+
+.dark-mode .support-me-container #supportMeModal .modal-content .list-group-item {
+    background-color: #161625;
+    border-color: #161625;
+}
+
+.dark-mode .support-me-container #supportMeModal .list-group-item.contact-option span {
+    color: #6c757d;
+}
+
+.dark-mode .support-me-container #supportMeModal .close {
+    color: #6c757d;
+}
+.dark-mode .meter {
+    box-shadow: none;
+    -webkit-box-shadow: none;
 }
 
 .hire-me-container .btn.hire-me-btn{
@@ -900,6 +987,27 @@ button:focus,
     color: #00A4EF;
 }
 
+.hire-me-container #hiremeModal .modal-content * {
+    transition: all .2s ease-out!important;
+}
+
+.dark-mode .hire-me-container #hiremeModal .modal-content {
+    background-color: #161625;
+}
+
+.dark-mode .hire-me-container #hiremeModal .modal-content .list-group-item {
+    background-color: #161625;
+    border-color: #161625;
+}
+
+.dark-mode .hire-me-container #hiremeModal .list-group-item.contact-option span {
+    color: #6c757d;
+}
+
+.dark-mode .hire-me-container #hiremeModal .close {
+    color: #6c757d;
+}
+
 .bottom-fixed {
     position: fixed;
     left: 0;
@@ -931,6 +1039,13 @@ button:focus,
 .bottom-fixed a.close-link:hover {
     color: #fff;
 }
+
+.dark-mode .hireme-btn-container h2,
+.dark-mode .bottom-fixed a.close-link,
+.dark-mode .bottom-fixed a.close-link:hover {
+    color: #6c757d;
+}
+
 .hireme-btn-container .btn.hire-me-btn{
     background: linear-gradient(to left, #12308b 50%, #595cd0 50%);
     background-size: 200% 100%;
@@ -983,4 +1098,76 @@ button:focus,
 }
 .blue-transition-bg:hover {
     background-position: left bottom;
+}
+
+/*-------------------
+ * Dark mode toggle
+ *-------------------*/
+ .dark-mode-sticky {
+    position: fixed;
+    /* transform: rotate(270deg); */
+    /* transform-origin: right bottom; */
+    right: 0;
+    top: initial;
+    bottom: 5px;
+    left: 5px;
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.dark-mode-sticky * {
+    transition: background-color .2s ease-out!important;
+}
+.dark-mode-sticky .toggle-dark-mode {
+    /* padding: 14px 13px 11px 14px; */
+    width: 50px;
+    height: 50px;
+    position: relative;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 0;
+    border: 0;
+    background-color: #ffffff;
+    color: #161625;
+    border: 1px solid #90909e;
+    /* border-right: none; */
+    text-transform: uppercase;
+}
+
+.dark-mode .dark-mode-sticky .toggle-dark-mode {
+    background-color: #1e1e30;
+    color: rgb(255, 193, 7);
+}
+
+.dark-mode-sticky .toggle-dark-mode .ui-mode-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.dark-mode-sticky .toggle-dark-mode .daylight-mode-icon {
+    display: none;
+}
+
+.dark-mode .dark-mode-sticky .toggle-dark-mode .dark-mode-icon {
+    display: none;
+}
+
+.dark-mode .dark-mode-sticky .toggle-dark-mode .daylight-mode-icon {
+    display: flex;
+}
+
+@media (max-width : 768px) {
+    .dark-mode-sticky {
+        z-index: 45;
+        bottom: 55px;
+        left: initial;
+        right: 5px;
+    }
 }

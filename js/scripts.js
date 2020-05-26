@@ -23,14 +23,13 @@ jQuery(function ($) {
     // --------------------------------------------------------------------
     
     $("[title]").click(function(e) {
-        if ($(document).width() <= 768) {
+        if ($(document).width() <= 768 && !$(this).hasClass('toggle-dark-mode')) {
             $(".title-tooltip").remove();
             let titleWidth = $(this).attr("title").length * 7.1;
             $(this).append(
                 '<span class="title-tooltip">' + $(this).attr("title") + "</span>"
             );
         }
-        
     });
 
     // $(".meter > span").each(function() {
@@ -57,7 +56,7 @@ jQuery(function ($) {
             console.log('test', $(this).attr('href'));
 
         setTimeout(function() {
-            window.location.href = urlToRedirect
+            // window.location.href = urlToRedirect
         }, 7000);
     });
 
@@ -74,7 +73,7 @@ jQuery(function ($) {
         var scrollTop = $(window).scrollTop()
         var trackLength = docheight - winheight
         var pctScrolled = Math.floor(scrollTop/trackLength * 100) // gets percentage scrolled (ie: 80 NaN if tracklength == 0)
-        console.log(pctScrolled + '% scrolled')
+        // console.log(pctScrolled + '% scrolled')
         return pctScrolled;
     }
      

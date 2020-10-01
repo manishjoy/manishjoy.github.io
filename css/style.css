@@ -334,7 +334,8 @@ button:focus,
 .header .content .about-text {
     margin : 10px 0;
     }
-.header .content .about-text .blue-transition-bg.extension-link {
+.header .content .about-text .blue-transition-bg.extension-link,
+.header .content .about-text .red-transition-bg.extension-link {
     padding: 10px 15px;
     color: #fff !important;
 }
@@ -549,6 +550,11 @@ button:focus,
 .row.extension-items .col-md-4 {
     margin-bottom: 15px;
 }
+
+.row.extension-items .col-md-3 {
+    margin-bottom: 15px;
+}
+
 .row.extension-items .extension-item-container {
     position: relative;
     padding: 45px 35px;
@@ -618,6 +624,25 @@ button:focus,
 }
 .row.extension-items .extension-item-container:hover a .extension-link {
     background-position: 84%;
+}
+
+.row.extension-items .extension-item-container.game-item-container {
+    padding: 15px;
+}
+
+.row.extension-items .extension-item-container.game-item-container {
+    -o-transition: transform 0.25s ease;
+    -moz-transition: transform 0.25s ease;
+    -webkit-transition: transform 0.25s ease;
+    transition: transform 0.25s ease;
+}
+
+.row.extension-items .extension-item-container.game-item-container:hover {
+    transform: rotate(2deg) scale(1.05);
+}
+
+.row.extension-items .extension-item-container a img {
+    max-width: 100%;
 }
 
 @media (max-width: 480px) {
@@ -1097,6 +1122,21 @@ button:focus,
     color: #fff;
 }
 .blue-transition-bg:hover {
+    background-position: left bottom;
+}
+
+.red-transition-bg {
+    background: linear-gradient(to left, #c0392b 50%, #e74c3c 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.3s ease-in-out;
+    -o-transition: background-position 0.3s ease-in-out;
+    -moz-transition: background-position 0.3s ease-in-out;
+    -webkit-transition: background-position 0.3s ease-in-out;
+    transition: background-position 0.3s ease-in-out;
+    color: #fff;
+}
+.red-transition-bg:hover {
     background-position: left bottom;
 }
 

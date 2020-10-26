@@ -1228,3 +1228,15 @@ button:focus,
         right: 5px;
     }
 }
+
+.dark-icon-image {
+    display: none;
+}
+
+.dark-mode .light-icon-image {
+    display: none;
+}
+
+.dark-mode .dark-icon-image {
+    display: block;
+}

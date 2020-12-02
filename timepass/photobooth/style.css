@@ -75,6 +75,9 @@ h1 {
     width: 100%;
     box-shadow: black 0px 0px 11px 0px;
     border-radius: 10px;
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
 }
 
 #img {

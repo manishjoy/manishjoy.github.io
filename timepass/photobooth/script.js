@@ -88,7 +88,11 @@ function takePhoto() {
     snap.play();
     canvasBlank.width = video.videoWidth;
     canvasBlank.height = video.videoHeight;
-    canvasBlank.getContext('2d').drawImage(video, 0, 0);    
+    var canvasBlankContext = canvasBlank.getContext('2d');
+    canvasBlankContext.save();
+    canvasBlankContext.scale(-1, 1);
+    canvasBlankContext.drawImage(video, 0, 0, canvasBlank.width * -1, canvasBlank.height);
+    canvasBlankContext.restore();
     // prompt2.style.display = 'none'
     var data = canvasBlank.toDataURL('image/png');
     img.src = data;
@@ -105,7 +109,7 @@ function takePhoto() {
 
 function downloadPhoto(){
     var link = document.createElement('a');
-    link.download = 'click.png';
+    link.download = 'manishjoy.github.io-photobooth-' + Date.now() + '.png';
     link.href = document.getElementById('photoCanvas').toDataURL()
     link.click();
 }

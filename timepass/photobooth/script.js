@@ -97,11 +97,11 @@ function takePhoto() {
     var data = canvasBlank.toDataURL('image/png');
     img.src = data;
     img.style.display = 'block';
-    var leftOffset = (canvas.width - canvas.width * 0.80)/2;
-    var topOffset = (canvas.height - canvas.height * 0.80)/2;
+    var leftOffset = (canvas.width - canvas.width * 0.84)/2;
+    var topOffset = (canvas.height - canvas.height * 0.84)/2;
 
     img.onload = function() {    
-        ctx.drawImage(img, leftOffset, topOffset, canvas.width * 0.80, canvas.height * 0.80);        
+        ctx.drawImage(img, leftOffset, topOffset, canvas.width * 0.84, canvas.height * 0.84);        
     }
     img.style.display = 'none';
     document.getElementById('download').classList.remove("disabled");

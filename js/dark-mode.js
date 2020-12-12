@@ -26,13 +26,23 @@ _deleteCookie = function (cookieName) {
     document.cookie = cookieName + '=; expires = Thu, 01 Jan 1970 00:00:01 GMT; path=/';
 };
 
-var darkModeEnabled = _accessCookie('darkModeEnabled');
+var darkModeEnabled = _accessCookie('darkModeEnabled') == "1" ? true : false;
 var toggleBtnDefaultText = 'Enable Dark Mode';
 var toggleBtnDarkEnabledText = 'Enable DayLight Mode';
-
-if (darkModeEnabled) {
-    document.getElementById('page-top').classList.add('dark-mode');
-    document.getElementById('toggleDarkMode').title = toggleBtnDarkEnabledText;
+if (_accessCookie('darkModeEnabled')) {
+    if (darkModeEnabled) {
+        document.getElementById('page-top').classList.add('dark-mode');
+        document.getElementById('toggleDarkMode').title = toggleBtnDarkEnabledText;
+    }
+} else {
+    /* 
+        check if system has dark mode enabled
+    */
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        darkModeEnabled = true;
+        document.getElementById('page-top').classList.add('dark-mode');
+        document.getElementById('toggleDarkMode').title = toggleBtnDarkEnabledText;
+    }
 }
 
 jQuery(function ($) {
@@ -45,9 +55,11 @@ jQuery(function ($) {
     $("#toggleDarkMode").click(function(e) {
         $('body').toggleClass('dark-mode');
         if (darkModeEnabled) {
-            _deleteCookie('darkModeEnabled');
+            darkModeEnabled = false;
+            _createCookie('darkModeEnabled', '0', 43200);
             $('#toggleDarkMode').attr('title', toggleBtnDefaultText);
         } else {
+            darkModeEnabled = true;
             _createCookie('darkModeEnabled', '1', 43200);
             $('#toggleDarkMode').attr('title', toggleBtnDarkEnabledText);
         }

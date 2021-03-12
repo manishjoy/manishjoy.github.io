@@ -56,7 +56,7 @@ jQuery(function ($) {
             console.log('test', $(this).attr('href'));
 
         setTimeout(function() {
-            // window.location.href = urlToRedirect
+            window.location.href = urlToRedirect
         }, 7000);
     });
 

@@ -1,4 +1,4 @@
-_createCookie = function (cookieName, value, minutes) {
+_createCookie = function(cookieName, value, minutes) {
     if (minutes) {
         var date = new Date();
         date.setTime(date.getTime() + minutes * 60 * 1000);
@@ -10,7 +10,7 @@ _createCookie = function (cookieName, value, minutes) {
     document.cookie = cookieName + "=" + value + expires + "; path=/";
 };
 
-_accessCookie = function (cookieName) {
+_accessCookie = function(cookieName) {
     var name = cookieName + '=';
     var allCookieArray = document.cookie.split(';');
 
@@ -22,7 +22,7 @@ _accessCookie = function (cookieName) {
     return '';
 };
 
-_deleteCookie = function (cookieName) {
+_deleteCookie = function(cookieName) {
     document.cookie = cookieName + '=; expires = Thu, 01 Jan 1970 00:00:01 GMT; path=/';
 };
 
@@ -32,6 +32,7 @@ var toggleBtnDarkEnabledText = 'Enable DayLight Mode';
 if (_accessCookie('darkModeEnabled')) {
     if (darkModeEnabled) {
         document.getElementById('page-top').classList.add('dark-mode');
+        document.querySelector('meta[property="theme-color"]').setAttribute('content', '#212230');
         document.getElementById('toggleDarkMode').title = toggleBtnDarkEnabledText;
     }
 } else {
@@ -41,17 +42,18 @@ if (_accessCookie('darkModeEnabled')) {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         darkModeEnabled = true;
         document.getElementById('page-top').classList.add('dark-mode');
+        document.querySelector('meta[property="theme-color"]').setAttribute('content', '#212230');
         document.getElementById('toggleDarkMode').title = toggleBtnDarkEnabledText;
     }
 }
 
-jQuery(function ($) {
+jQuery(function($) {
 
     'use strict';
     // --------------------------------------------------------------------
     // For Dark mode toggle
     // --------------------------------------------------------------------
-    
+
     $("#toggleDarkMode").click(function(e) {
         $('body').toggleClass('dark-mode');
         if (darkModeEnabled) {

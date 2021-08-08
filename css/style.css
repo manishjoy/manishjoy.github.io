@@ -1240,3 +1240,20 @@ button:focus,
 .dark-mode .dark-icon-image {
     display: block;
 }
+
+/* Dark Mode */
+.dark-mode-element {
+    display: none !important;
+}
+
+.daylight-mode-element {
+    display: block !important;
+}
+
+.dark-mode .dark-mode-element {
+    display: block !important;
+}
+
+.dark-mode .daylight-mode-element {
+    display: none !important;
+}

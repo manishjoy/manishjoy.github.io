@@ -400,6 +400,14 @@
             $('body').addClass('show-sticky-hire-btn');
             _createCookie('keepclosed', 'yes', 2);
         });
+
+        $(".bottom-fixed .hire-me-btn").click(function(e) {
+            // e.preventDefault();
+            $('.bottom-fixed').removeClass('active');
+            $('.hire-me-sticky').removeClass('hide-sticky');
+            $('body').addClass('show-sticky-hire-btn');
+            _createCookie('keepclosed', 'yes', 2);
+        });
     });
 
 })(jQuery);

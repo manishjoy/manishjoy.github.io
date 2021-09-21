@@ -199,6 +199,10 @@
             loop: false, // Infinity loop. Duplicate last and first items to get loop illusion.
             navText: false,
             autoHeight: true,
+            loop: true,
+            autoplay: true,
+            autoplayHoverPause: true,
+            autoplayTimeout: 3200,
             margin: 25,
             responsive : {
                 // breakpoint from 0 up

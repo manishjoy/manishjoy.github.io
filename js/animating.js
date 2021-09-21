@@ -113,7 +113,7 @@ var PageTransitions = (function ($, options) {
                     return;
                 }
 
-                if (document.body.clientWidth < 1024) {
+                if (document.body.clientWidth > 1024) {
                     return;
                 }
     

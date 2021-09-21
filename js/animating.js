@@ -121,9 +121,19 @@ var PageTransitions = (function ($, options) {
                                                                                 
             if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
                 if ( xDiff > 0 ) {
-                    alert('right');
+                    /* Swipe Right */
+                    var activeItem = $('.main-menu a.active').parent("li");
+                    activeItem.next("li").children("a").click();
+                    if ( activeItem.is(':last-child') ) {
+                        $('.main-menu li:first-child').children("a").click();
+                    }
                 } else {
-                    alert('left');
+                    /* Swipe Left */
+                    var activeItem = $('.main-menu a.active').parent("li");
+                    activeItem.prev("li").children("a").click();
+                    if ( activeItem.is(':first-child') ) {
+                        $('.main-menu li:last-child').children("a").click();
+                    }
                 }                       
             } else {
                 if ( yDiff > 0 ) {

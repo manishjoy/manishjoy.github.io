@@ -239,6 +239,7 @@ var PageTransitions = (function ($, options) {
             else {
                 selectedAnimNumber = parseInt(animation);
             }
+            // selectedAnimNumber = 2;
     
             // Checking if the animation number is out of bound, max allowed value is 1 to 67.
             if (selectedAnimNumber > 67) {

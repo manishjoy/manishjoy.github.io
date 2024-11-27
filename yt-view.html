@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form action="" method="post">
+            <input id="urlvideo" value="https://www.youtube.com/watch?v=eMCmRQlTw1Y?autoplay=1" /><br><br><br>
+            <input id="nbrvideo" value="27" /><br><br><br>
+            <button onclick="play();">Play</button>
+        </form>
+    </div>
+    <div id="player"><div class="videoContainer hide-for-small-only" id="player1"></div>
+    <script>
+        function play() {
+            var urlvid,
+                fields,
+                vid,
+                vid1,
+                list;
+            urlvid = document.getElementById("urlvideo").value;
+
+            if (urlvid.includes("youtu.be")) {
+                vid = list = urlvid.split("/")[3];
+            }
+
+            else if (urlvid.includes("&list=")) {
+                fields = urlvid.split('?v=')[1];
+                vid = fields.split('&')[0];
+                list = fields.split('&list=')[1].split('&')[0];
+            }
+
+            else {
+                fields = urlvid.split('?v=')[1];
+                vid = fields.split('&')[0];
+                list = vid;
+            }
+
+            if (vid != '') {
+
+                urlvid = "https://www.youtube.com/embed/" + vid;
+
+                //	  	urlvid = "https://www.youtube.com/embed/"+vid+"?rel=0;&autoplay=1&mute=1&loop=1&list="+list+"&vq=144p";
+
+                var n = document.getElementById("nbrvideo").value;
+
+                for (var i = 1; i <= n; i++) {
+
+                    var iframe = document.createElement('iframe');
+                    iframe.src = urlvid;
+                    iframe.style.width = "256px"; //256px 400px
+                    iframe.style.height = "144px"; //144px 120px
+                    document.getElementById('player').appendChild(iframe);
+
+                }
+
+
+                //UU8bfoaPGR-nml7ldJI_OWTg
+                //UUcrM5zwZbEgV7EvFOMG5W2A
+                //UUdMlRsMbFEqN5JtiF4kSX6g
+                //var r = Math.floor(Math.random() * 74);
+                //vid1 = "https://youtube.com/playlist?list=PL_WYXVD6-zfaPVDkkrJRRs9IkRt4JQOto&playnext=1&index="+r+"&autoplay=1&mute=1&loop=1&rel=0&vq=tiny";
+                vid1 = "https://youtube.com/playlist?list=PL_WYXVD6-zfaPVDkkrJRRs9IkRt4JQOto&playnext=1&index=" + r + "&autoplay=1&mute=1&loop=1&rel=0&vq=tiny";
+                var iframe1 = document.createElement('iframe');
+                iframe1.src = vid1;
+                iframe1.style.width = "256px"; //96px 256px
+                iframe1.style.height = "144px"; //72px 144px
+                iframe1.style.border = "1px solid red"; //dashed solid
+                iframe1.setAttribute('allowFullScreen', '');
+                iframe1.setAttribute('controls', 'none');
+                iframe1.setAttribute('class', 'overlay');
+                document.getElementById('player1').appendChild(iframe1);
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

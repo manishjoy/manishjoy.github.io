@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Unfollowers Revealer: How to See Who Does not Follow You Back in One Click</title>
+    <meta property="theme-color" content="#E1306C" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title"
+        content="Instagram Unfollowers Revealer: How to See Who Does not Follow You Back in One Click" />
+    <meta property="og:image:alt"
+        content="Instagram Unfollowers Revealer: How to See Who Does not Follow You Back in One Click" />
+    <meta property="og:description"
+        content="Want to know who doesn’t follow you back on Instagram? No need to waste time searching through your followers list. Just upload your Instagram information file and get a list of all the users who don’t follow you back. It’s fast, easy, and free." />
+    <meta property="og:url" content="https://www.manishjoy.com/pages/insta-followers/" />
+    <meta property="og:site_name"
+        content="Instagram Unfollowers Revealer: How to See Who Does not Follow You Back in One Click" />
+    <meta property="og:image"
+        content="https://www.manishjoy.com/pages/insta-followers/img/Instagram-Unfollowers-Revealer-favicon.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="description"
+        content="Want to know who doesn’t follow you back on Instagram? No need to waste time searching through your followers list. Just upload your Instagram information file and get a list of all the users who don’t follow you back. It’s fast, easy, and free." />
+
+    <link href="./img/Instagram-Unfollowers-Revealer-favicon.ico" type="image/ico" rel="icon">
+    <link href="./img/Instagram-Unfollowers-Revealer-favicon.png" type="image/png" rel="icon">
+    <link rel="icon" type="image/x-icon" href="./img/Instagram-Unfollowers-Revealer-favicon.ico">
+    <link rel="apple-touch-icon" href="./img/Instagram-Unfollowers-Revealer-favicon.ico">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="json-form-container ">
+                    <div class="logo-container">
+                        <img src="./img/Instagram-Unfollowers-Revealer.png" alt="Instagram Unfollowers Finder">
+                    </div>
+                    <h2>Instagram Unfollowers Finder: The Ultimate Tool to Find Out Who Doesn’t Follow You Back</h2>
+                    <form class="json-form" action="processor.php" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="name"><strong>Followers</strong> JSON File:</label>
+                            <input type="file" id="followers" name="followers" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name"><strong>Following</strong> JSON File:</label>
+                            <input type="file" id="following" name="following" required>
+                        </div>
+                        <button type="submit">Submit</button>
+
+                        <div class="form-group instruction-toggle-container">
+                            <a href="javascript:void(0)" data-toggle="modal" data-target="#instructionModal">How to
+                                Use?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade instruction-modal" id="instructionModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">User Guide</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="instruction-list">
+                        <p><span>&#10066;</span>As we are going to use the method which doesn't impact your Instagram
+                            profile. So we need to use the official Instagram process to download your data which is the
+                            most secure way.</p>
+                        <p><span>&#10066;</span>Use this link to download your data: <a
+                                href="https://help.instagram.com/181231772500920" target="_blank">Dowload Link &
+                                Instruction</a></p>
+                        <p><span>&#10066;</span>Just make sure to choose <strong>JSON</strong> format in the last step.
+                        </p>
+                        <p><span>&#10066;</span>Once you are done with the steps, you will get an email to download your
+                            instagram data in a compressed zipped file.</p>
+                        <p><span>&#10066;</span>Download the file in your device (computer, laptop etc.).
+                            Extract/De-compress the file.</p>
+                        <p><span>&#10066;</span>Now, in the de-compressed folder, you will find several other folders.
+                            Go to <strong><i>connections &xrarr; followers_and_following</i></strong></p>
+                        <p><span>&#10066;</span>You will find two files, following.json and followers_1.json (Depending
+                            upon the number of following and follow, you may find more than one file like
+                            followers_2.json, followers_3.json and so on)</p>
+                        <p><span>&#10066;</span>This application accepts only one JSON file for
+                            <strong>followers</strong> as well as <strong>following</strong>. If you see more than one
+                            followers or following files, you will have to merge them into one. Use this tool to do So:
+                            <a href="https://paji-toolset.net/json-merger" target="_blank">JSON Merged</a>. <i>Make sure
+                                to merge similar kind of JSON data only, e.g. followers_1.json with followers_2.json,
+                                followers_3.json</i></p>
+                        <p><span>&#10066;</span>Now in this application, upload your followers and following files in
+                            the respective fields.</p>
+                        <p><span>&#10066;</span>Click on the <strong>Submit</strong> button.</p>
+                        <p><span>&#10066;</span>The application will analyze the data and will generate a text file with
+                            the Instagram IDs whom you follow and they don't follow you back.</p>
+                        <p><span>&#10066;</span>And, don't worry. This application doesn’t save your data, so your data
+                            is completely safe with you.</p>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1WZCKT34B"
+        type="558860356d308c7f7c9c7d88-text/javascript"></script>
+    <script type="558860356d308c7f7c9c7d88-text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-D1WZCKT34B');
+    </script>
+</body>
+
+</html>

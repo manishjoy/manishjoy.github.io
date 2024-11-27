@@ -1,0 +1,1 @@
+!function(t){"use strict";t(window).on("load",(function(){t.get("https://www.manishjoy.com/blogs.json",(function(n,o){for(var s="",a=0;a<n.length;a++)s+='<a target="_blank" href="'+n[a].link+'">'+n[a].title.rendered+'</a><img src="./assets/images/star1.svg" alt="Star">';t("#blog-post-container").html(s)}))}))}(jQuery);

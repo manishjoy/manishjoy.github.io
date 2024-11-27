@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio - Manish Joy - Full Stack Magento Developer</title>
+    <meta property="theme-color" content="#323232" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfolio - Manish Joy - Full Stack Magento Developer" />
+    <meta property="og:image:alt" content="Portfolio - Manish Joy - Full Stack Magento Developer" />
+    <meta property="og:description" content="Explore the impressive portfolio of Manish Joy, a skilled Magento Developer. Discover my expertise in developing cutting-edge e-commerce solutions and browse through my successful projects. Get inspired and find out how I can help elevate your online business with my exceptional Magento development skills." />
+    <meta property="og:url" content="https://manishjoy.com/" />
+    <meta property="og:site_name" content="Manish Joy - Full Stack Magento Developer" />
+    <meta property="og:image" content="https://manishjoy.com/img/Manish-Joy-profile.png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Explore the impressive portfolio of Manish Joy, a skilled Magento Developer. Discover my expertise in developing cutting-edge e-commerce solutions and browse through my successful projects. Get inspired and find out how I can help elevate your online business with my exceptional Magento development skills." />
+    <meta name="keywords" content="top rates magento developer, magento developer, magento expert, magento job, magento, magento extensions, magento module, magento experts, magento development, magento integrations, manihsjoy, github, manish, linkedin, facebook" />
+    <meta name="author" content="Manish Joy" />
+    <link href="./assets/images/Manish-Joy-profile.ico" type="image/ico" rel="icon">
+    <link href="./assets/images/Manish-Joy-profile.png" type="image/png" rel="icon">
+    <link rel="icon" type="image/x-icon" href="./assets/images/Manish-Joy-profile.ico">
+    <link rel="apple-touch-icon" href="./assets/images/Manish-Joy-profile.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <main class="main-workspage">
+
+        <!-- Header -->
+        <header class="header-area">
+            <div class="container">
+                <div class="gx-row d-flex align-items-center justify-content-between">
+                    <a href="./index.html" class="logo">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </a>
+
+                    <nav class="navbar">
+                        <ul class="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="active"><a href="works.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <a href="./contact.html" class="theme-btn">Let's talk</a>
+                    </nav>
+
+                    <a href="./assets/pdf/Resume.pdf" class="theme-btn" target="_blank">Download CV</a>
+
+                    <div class="show-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Projects -->
+        <section class="projects-area">
+            <div class="container">
+                <h1 class="section-heading" data-aos="fade-up"><img src="./assets/images/star-2.png" alt="Star"> Portfolio <img src="./assets/images/star-2.png" alt="Star"></h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div data-aos="zoom-in">
+                            <div class="project-item shadow-box">
+                                <a class="overlay-link" href="https://holcim-shop.de/" target="_blank"></a>
+                                <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
+                                <div class="project-img">
+                                    <img src="./assets/images/portfolio/holcim.webp" alt="Project">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="project-info">
+                                        <p>Magento</p>
+                                        <h1>Backend System and APIs for Holcim Germany</h1>
+                                    </div>
+                                    <a href="https://holcim-shop.de/" target="_blank" class="project-btn">
+                                        <img src="./assets/images/icon.svg" alt="Button">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="zoom-in">
+                            <div class="project-item shadow-box">
+                                <a class="overlay-link" href="https://www.iffcobazar.in/" target="_blank"></a>
+                                <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
+                                <div class="project-img">
+                                    <img src="./assets/images/portfolio/iffcobazar.in.webp" alt="Project">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="project-info">
+                                        <p>Magento</p>
+                                        <h1>Backend System and APIs for IFFCO Bazar</h1>
+                                    </div>
+                                    <a href="https://www.iffcobazar.in/" target="_blank" class="project-btn">
+                                        <img src="./assets/images/icon.svg" alt="Button">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div data-aos="zoom-in">
+                            <div class="project-item shadow-box">
+                                <a class="overlay-link" href="https://www.limepay.com.au/" target="_blank"></a>
+                                <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
+                                <div class="project-img">
+                                    <img src="./assets/images/portfolio/limepay.webp" alt="Project">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="project-info">
+                                        <p>Magento</p>
+                                        <h1>Magento Extension for Limepay</h1>
+                                    </div>
+                                    <a href="https://www.limepay.com.au/" target="_blank" class="project-btn">
+                                        <img src="./assets/images/icon.svg" alt="Button">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="section-heading" data-aos="fade-up"><img src="./assets/images/star-2.png" alt="Star"> Portfolio <img src="./assets/images/star-2.png" alt="Star"></h1>
+                        
+                        <div class="d-flex align-items-start gap-24">
+                            <div data-aos="zoom-in" class="flex-1">
+                                <div class="project-item shadow-box">
+                                    <a class="overlay-link" href="https://platoo.in/" target="_blank"></a>
+                                    <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
+                                    <div class="project-img">
+                                        <img src="./assets/images/portfolio/platoo.in.webp" alt="Project">
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="project-info">
+                                            <p>PHP & JS</p>
+                                            <h1>Platoo - India's First DIY Virtual Events Platform</h1>
+                                        </div>
+                                        <a href="https://platoo.in/" target="_blank" class="project-btn">
+                                            <img src="./assets/images/icon.svg" alt="Button">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div data-aos="zoom-in" class="flex-1">
+                                <div class="project-item shadow-box">
+                                    <a class="overlay-link" href="https://gleamkorea.com/" target="_blank"></a>
+                                    <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
+                                    <div class="project-img">
+                                        <img src="./assets/images/portfolio/gleamkorea.webp" alt="Project">
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="project-info">
+                                            <p>E-Commerce Store</p>
+                                            <h1>Gleamkorea - Skincare & Cosmetics Beauty Store</h1>
+                                        </div>
+                                        <a href="https://gleamkorea.com/" target="_blank" class="project-btn">
+                                            <img src="./assets/images/icon.svg" alt="Button">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-start gap-24">
+                            <div data-aos="zoom-in" class="flex-1">
+                                <div class="project-item shadow-box">
+                                    <a class="overlay-link" href="https://www.xmagestore.com/" target="_blank"></a>
+                                    <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
+                                    <div class="project-img">
+                                        <img src="./assets/images/portfolio/xmagestore.webp" alt="Project">
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="project-info">
+                                            <p>Magento Marketplace</p>
+                                            <h1>xMageStore - Top Magento eCommerce Agency in India</h1>
+                                        </div>
+                                        <a href="https://www.xmagestore.com/" target="_blank" class="project-btn">
+                                            <img src="./assets/images/icon.svg" alt="Button">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-aos="zoom-in" class="flex-1">
+                                <div class="project-item shadow-box">
+                                    <a class="overlay-link" href="https://thebumbag.com/" target="_blank"></a>
+                                    <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
+                                    <div class="project-img">
+                                        <img src="./assets/images/portfolio/thebumbag.webp" alt="Project">
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="project-info">
+                                            <p>E-Commerce Store</p>
+                                            <h1>The Bumbag Co - E-Commerce Store</h1>
+                                        </div>
+                                        <a href="https://thebumbag.com/" target="_blank" class="project-btn">
+                                            <img src="./assets/images/icon.svg" alt="Button">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start gap-24">
+                            <div data-aos="zoom-in" class="flex-1">
+                                <div class="project-item shadow-box">
+                                    <a class="overlay-link" href="https://www.pandashoes.com/en/" target="_blank"></a>
+                                    <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
+                                    <div class="project-img">
+                                        <img src="./assets/images/portfolio/pandashoes.webp" alt="Project">
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="project-info">
+                                            <p>E-Commerce Store</p>
+                                            <h1>Panda Shoes - E-Commerce Store</h1>
+                                        </div>
+                                        <a href="https://www.pandashoes.com/en/" target="_blank" class="project-btn">
+                                            <img src="./assets/images/icon.svg" alt="Button">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-aos="zoom-in" class="flex-1">
+                                <div class="project-item shadow-box">
+                                    <a class="overlay-link" href="https://rudsak.com/" target="_blank"></a>
+                                    <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
+                                    <div class="project-img">
+                                        <img src="./assets/images/portfolio/rudsak.webp" alt="Project">
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="project-info">
+                                            <p>E-Commerce Store</p>
+                                            <h1>RUDSAK Canada - E-Commerce Store</h1>
+                                        </div>
+                                        <a href="https://rudsak.com/" target="_blank" class="project-btn">
+                                            <img src="./assets/images/icon.svg" alt="Button">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start gap-24">
+                            <div data-aos="zoom-in" class="flex-1">
+                                <div class="project-item shadow-box">
+                                    <a class="overlay-link" href="https://www.otentika.com/" target="_blank"></a>
+                                    <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
+                                    <div class="project-img">
+                                        <img src="./assets/images/portfolio/otentika.webp" alt="Project">
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="project-info">
+                                            <p>E-Commerce Store</p>
+                                            <h1>O'tentika - E-Commerce Store</h1>
+                                        </div>
+                                        <a href="https://www.otentika.com/" target="_blank" class="project-btn">
+                                            <img src="./assets/images/icon.svg" alt="Button">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-aos="zoom-in" class="flex-1">
+                                <div class="project-item shadow-box">
+                                    <a class="overlay-link" href="https://www.linkedin.com/in/manishjoy/" target="_blank"></a>
+                                    <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
+                                    <div class="project-img">
+                                        <img src="./assets/images/portfolio/know-more-portfolio.png" alt="Project">
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="project-info">
+                                            <p></p>
+                                            <h1>Know More</h1>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/manishjoy/" target="_blank" class="project-btn">
+                                            <img src="./assets/images/icon.svg" alt="Button">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+
+
+        <!-- Footer -->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="footer-content text-center">
+                    <a href="./index.html" class="logo">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </a>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="works.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <p class="copyright">
+                        &copy;
+                        <span id="copyright">
+                            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                        </span>
+                        <span><a href="https://www.linkedin.com/in/manishjoy/" title="Manish Joy" target="_blank">Manish Joy</a></span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    
+
+    <script src="./assets/js/jquery-3.6.4.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

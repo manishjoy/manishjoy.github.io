@@ -1,0 +1,17 @@
+{
+    "name": "manishjoy/web-mj",
+    "autoload": {
+        "psr-4": {
+            "Manishjoy\\WebMj\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "manishjoy",
+            "email": "manishjoy.mj@gmail.com"
+        }
+    ],
+    "require": {
+        "sendgrid/sendgrid": "~7"
+    }
+}

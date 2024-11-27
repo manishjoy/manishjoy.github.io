@@ -1,0 +1,23 @@
+(function($) {
+    "use strict";
+    
+        //On Window load & Resize
+        $(window).on('load', function() { //Load
+            $.get("https://www.themagentoblog.com/wp-json/wp/v2/posts?page=1&per_page=4&_fields[]=title&_fields[]=link&_fields[]=jetpack_featured_media_url&_fields[]=date", function(data, status){
+                var blogHtml = "";
+                for(var i = 0; i < data.length; i++){
+                    // console.log(data[i]);
+                    /* Format date */
+                    var d = new Date(data[i].date);
+                    var ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(d);
+                    var mo = new Intl.DateTimeFormat('en', { month: 'short' }).format(d);
+                    var da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(d);
+                    var formattedDate = `${da} ${mo} ${ye}`;
+                    blogHtml += '<a target="_blank" href="'+ data[i].link +'">'+ data[i].title.rendered +'</a><img src="./assets/images/star1.svg" alt="Star">';
+                }
+                $("#blog-post-container").html(blogHtml)
+            });
+        });
+    
+    })(jQuery);
+    

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Me</title>
+    <meta property="theme-color" content="#323232" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact Me - Manish Joy - Full Stack Magento Developer" />
+    <meta property="og:image:alt" content="Contact Me - Manish Joy - Full Stack Magento Developer" />
+    <meta property="og:description" content="Explore the impressive portfolio of Manish Joy, a skilled Magento Developer. Discover my expertise in developing cutting-edge e-commerce solutions and browse through my successful projects. Get inspired and find out how I can help elevate your online business with my exceptional Magento development skills." />
+    <meta property="og:url" content="https://manishjoy.com/" />
+    <meta property="og:site_name" content="Manish Joy - Full Stack Magento Developer" />
+    <meta property="og:image" content="https://manishjoy.com/img/Manish-Joy-profile.png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Explore the impressive portfolio of Manish Joy, a skilled Magento Developer. Discover my expertise in developing cutting-edge e-commerce solutions and browse through my successful projects. Get inspired and find out how I can help elevate your online business with my exceptional Magento development skills." />
+    <meta name="keywords" content="top rates magento developer, magento developer, magento expert, magento job, magento, magento extensions, magento module, magento experts, magento development, magento integrations, manihsjoy, github, manish, linkedin, facebook" />
+    <meta name="author" content="Manish Joy" />
+    <link href="./assets/images/Manish-Joy-profile.ico" type="image/ico" rel="icon">
+    <link href="./assets/images/Manish-Joy-profile.png" type="image/png" rel="icon">
+    <link rel="icon" type="image/x-icon" href="./assets/images/Manish-Joy-profile.ico">
+    <link rel="apple-touch-icon" href="./assets/images/Manish-Joy-profile.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/fonts/fontawesome-free-5.12.1-web/css/all.min.css" type="text/css">
+</head>
+
+<body>
+
+    <main class="main-aboutpage">
+
+        <!-- Header -->
+        <header class="header-area">
+            <div class="container">
+                <div class="gx-row d-flex align-items-center justify-content-between">
+                    <a href="./index.html" class="logo">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </a>
+
+                    <nav class="navbar">
+                        <ul class="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="works.html">Portfolio</a></li>
+                            <li class="active"><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <a href="./contact.html" class="theme-btn">Let's talk</a>
+                    </nav>
+
+                    <a href="./assets/pdf/Resume.pdf" class="theme-btn" target="_blank">Download CV</a>
+
+                    <div class="show-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Contact -->
+        <section class="contact-area">
+            <div class="container">
+                <div class="gx-row d-flex justify-content-between gap-24">
+                    <div class="contact-infos">
+                        <h3 data-aos="fade-up">Contact Info</h3>
+                        <ul class="contact-details">
+                            <li class="d-flex align-items-center" data-aos="zoom-in">
+                                <div class="icon-box shadow-box">
+                                    <i class="iconoir-mail"></i>
+                                </div>
+                                <div class="right">
+                                    <span>E-Mail</span>
+                                    <h4><a href="mailto:manishjoy.mj@gmail.com">manishjoy.mj@gmail.com</a></h4>
+                                    <h4><a href="mailto:enquiry@manishjoy.com">enquiry@manishjoy.com</a></h4>
+                                </div>
+                            </li>
+
+                            <li class="d-flex align-items-center" data-aos="zoom-in">
+                                <div class="icon-box shadow-box">
+                                    <i class="iconoir-phone"></i>
+                                </div>
+                                <div class="right">
+                                    <span>Phone</span>
+                                    <h4><a href="tel:+917042427677">(+91) 7042427677</a></h4>
+                                </div>
+                            </li>
+
+                            <li class="d-flex align-items-center" data-aos="zoom-in">
+                                <div class="icon-box shadow-box">
+                                    <i class="iconoir-pin-alt"></i>
+                                </div>
+                                <div class="right">
+                                    <span>Location</span>
+                                    <h4><a href="https://goo.gl/maps/h76zvkiufKqQBhFy9" target="_blank">Noida, India</a>
+                                    </h4>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h3 data-aos="fade-up">Social Info</h3>
+                        <ul class="social-links d-flex align-center" data-aos="zoom-in">
+                            <a href="https://api.whatsapp.com/send?phone=917042427677&amp;text=Hi, I contacted you through your website."
+                                target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                            <a href="https://www.youtube.com/@OyyeJoy?sub_confirmation=1" target="_blank"><i
+                                    class="fab fa-youtube" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/imanishjoy" target="_blank"><i class="fab fa-twitter"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/oyyejoy" target="_blank"><i class="fab fa-instagram"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/manishjoy/" target="_blank"><i
+                                    class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/iManishJoy" target="_blank"><i class="fab fa-facebook-f"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://github.com/manishjoy" target="_blank"><i class="fab fa-github"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://magento.stackexchange.com/users/50172/manish-joy" target="_blank"><i
+                                    class="fab fa-stack-exchange" aria-hidden="true"></i></a>
+                        </ul>
+                    </div>
+
+                    <div data-aos="zoom-in" class="contact-form">
+                        <div class="shadow-box">
+                            <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
+                            <img src="./assets/images/icon3.png" alt="Icon">
+
+                            <h1>Find me <span>here.</span></h1>
+                            <div class="map">
+                                <div class="mapouter">
+                                    <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
+                                            src="https://maps.google.com/maps?q=Gardenia%20Gateway&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                        <style>
+                                            .mapouter {
+                                                position: relative;
+                                                text-align: right;
+                                                height: 100%;
+                                                width: 100%
+                                            }
+
+                                            .gmap_canvas {
+                                                overflow: hidden;
+                                                background: none !important;
+                                                height: 100%;
+                                                width: 100%;
+                                            }
+                                        </style>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h1>Let’s work <span>together.</span></h1>
+
+                            <div class="contact-link-container">
+                                <a class="btn btn-primary whatsapp"
+                                    href="https://api.whatsapp.com/send?phone=917042427677&amp;text=Hi, I want to hire you for my project."
+                                    target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i><span>Message on
+                                        WhatsApp</span></a>
+                                <a class="btn btn-primary linkedin" href="https://www.linkedin.com/in/manishjoy/"
+                                    target="_blank"><i class="fab fa-linkedin"></i><span>Message on LinkedIn</span></a>
+                                <a class="btn btn-primary github" href="https://github.com/manishjoy" target="_blank"><i
+                                        class="fab fa-github"></i><span>Checkout on GitHub</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="footer-content text-center">
+                    <a href="./index.html" class="logo">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </a>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="works.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <p class="copyright">
+                        &copy;
+                        <span id="copyright">
+                            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                        </span>
+                        <span><a href="https://www.linkedin.com/in/manishjoy/" title="Manish Joy" target="_blank">Manish
+                                Joy</a></span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <script src="./assets/js/jquery-3.6.4.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/ajax-form.js"></script>
+</body>
+
+</html>

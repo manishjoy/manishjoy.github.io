@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Resume - Manish Joy - Full Stack Magento Developer</title>
+    <meta property="theme-color" content="#323232" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Resume - Manish Joy - Full Stack Magento Developer" />
+    <meta property="og:image:alt" content="Resume - Manish Joy - Full Stack Magento Developer" />
+    <meta property="og:description" content="Explore the impressive portfolio of Manish Joy, a skilled Magento Developer. Discover my expertise in developing cutting-edge e-commerce solutions and browse through my successful projects. Get inspired and find out how I can help elevate your online business with my exceptional Magento development skills." />
+    <meta property="og:url" content="https://manishjoy.com/" />
+    <meta property="og:site_name" content="Manish Joy - Full Stack Magento Developer" />
+    <meta property="og:image" content="https://manishjoy.com/img/Manish-Joy-profile.png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Explore the impressive portfolio of Manish Joy, a skilled Magento Developer. Discover my expertise in developing cutting-edge e-commerce solutions and browse through my successful projects. Get inspired and find out how I can help elevate your online business with my exceptional Magento development skills." />
+    <meta name="keywords" content="top rates magento developer, magento developer, magento expert, magento job, magento, magento extensions, magento module, magento experts, magento development, magento integrations, manihsjoy, github, manish, linkedin, facebook" />
+    <meta name="author" content="Manish Joy" />
+    <link href="./assets/images/Manish-Joy-profile.ico" type="image/ico" rel="icon">
+    <link href="./assets/images/Manish-Joy-profile.png" type="image/png" rel="icon">
+    <link rel="icon" type="image/x-icon" href="./assets/images/Manish-Joy-profile.ico">
+    <link rel="apple-touch-icon" href="./assets/images/Manish-Joy-profile.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/fonts/fontawesome-free-5.12.1-web/css/all.min.css" type="text/css">
+</head>
+
+<body>
+
+    <main class="main-aboutpage">
+
+        <!-- Header -->
+        <header class="header-area">
+            <div class="container">
+                <div class="gx-row d-flex align-items-center justify-content-between">
+                    <a href="./index.html" class="logo">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </a>
+
+                    <nav class="navbar">
+                        <ul class="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="works.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <a href="./contact.html" class="theme-btn">Let's talk</a>
+                    </nav>
+
+                    <a href="./assets/pdf/Resume.pdf" class="theme-btn" target="_blank">Download CV</a>
+
+                    <div class="show-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Credentials -->
+        <section class="credential-area">
+            <div class="container">
+                <div class="gx-row d-flex">
+                    <div class="credential-sidebar-wrap" data-aos="zoom-in">
+                        <div class="credential-sidebar text-center">
+                            <div class="shadow-box">
+                                <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
+                                <div class="img-box">
+                                    <img src="./assets/images/me.png" alt="About Me">
+                                </div>
+                                <h2>Manish Joy</h2>
+                                <p>Full Stack Magento Developer</p>
+
+                                <ul class="social-links d-flex justify-content-center">
+                                    <li><a href="https://www.youtube.com/@OyyeJoy?sub_confirmation=1" target="_blank"><i
+                                                class="iconoir-youtube" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://twitter.com/imanishjoy" target="_blank"><i
+                                                class="iconoir-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.instagram.com/oyyejoy" target="_blank"><i
+                                                class="iconoir-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/manishjoy/" target="_blank"><i
+                                                class="iconoir-linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://github.com/manishjoy" target="_blank"><i class="iconoir-github"
+                                                aria-hidden="true"></i></a></li>
+                                </ul>
+
+                                <a href="./assets/pdf/Resume.pdf" class="theme-btn" target="_blank">Download CV</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="credential-content flex-1">
+                        <div class="credential-about" data-aos="zoom-in">
+                            <h2>Profile</h2>
+                            <p>Tech geek. Self Motivated. Love to code, learn new technologies and skills.<br> Currently
+                                working as a Sr. Package Consultant at <a href="https://www.ibm.com/"
+                                    target="_blank">IBM India Pvt. Ltd.</a>, Noida.</p>
+                        </div>
+
+                        <div class="credential-edc-exp credential-experience">
+                            <h2 data-aos="fade-up">Experience</h2>
+
+                            <div class="timeline timeline-second-style clearfix">
+                                <div class="timeline-item clearfix" data-aos="fade-up">
+                                    <div class="left-part">
+                                        <h5 class="item-period">October 2022 - Present</h5>
+                                        <span class="item-company">IBM India Pvt. Ltd.</span>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="right-part">
+                                        <h4 class="item-title">Sr. Package Consultant</h4>
+                                        <p>
+                                        <ul class="experience-list">
+                                            <li><i class="fas fa-code"></i></i>Working as Magento Developer from October
+                                                2022</li>
+                                            <li><i class="fas fa-code"></i></i>Have executed several projects</li>
+                                            <li><i class="fas fa-code"></i></i>Have worked on Magento Extensions (Admin
+                                                and
+                                                Frontend),Themes (Admin and Frontend) and Debugging</li>
+                                        </ul>
+                                        </p>
+                                        <p class="work-location">Noida, India</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item clearfix" data-aos="fade-up">
+                                    <div class="left-part">
+                                        <h5 class="item-period">March 2021 - September 2022</h5>
+                                        <span class="item-company">Vinove Software and Services Pvt. Ltd.</span>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="right-part">
+                                        <h4 class="item-title">Software Developer | Sr. Magento Developer | LAMP -
+                                            Magento</h4>
+                                        <p>
+                                        <ul class="experience-list">
+                                            <li><i class="fas fa-code"></i></i>Working as Magento Developer from March
+                                                2021</li>
+                                            <li><i class="fas fa-code"></i></i>Have executed several projects</li>
+                                            <li><i class="fas fa-code"></i></i>Have worked on Magento Extensions (Admin
+                                                and
+                                                Frontend),Themes (Admin and Frontend) and Debugging</li>
+                                        </ul>
+                                        </p>
+                                        <p class="work-location">Noida, India</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item clearfix" data-aos="fade-up">
+                                    <div class="left-part">
+                                        <h5 class="item-period">January 2016 - February 2021</h5>
+                                        <span class="item-company">Excellence Technologies</span>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="right-part">
+                                        <h4 class="item-title">Sr. Magento Developer | Team Lead</h4>
+                                        <p>
+                                        <ul class="experience-list">
+                                            <li><i class="fas fa-code"></i></i>Worked as Magento Developer from January
+                                                2016 to February
+                                                2021</li>
+                                            <li><i class="fas fa-code"></i></i>Executed several projects</li>
+                                            <li><i class="fas fa-code"></i></i>Worked on Magento Extensions (Admin and
+                                                Frontend),Themes
+                                                (Admin and Frontend) and Debugging</li>
+                                            <li><i class="fas fa-code"></i></i>Worked as team lead & technical trainer
+                                            </li>
+                                            <li><i class="fas fa-code"></i></i>Worked on Extensions and Social Promotion
+                                                Lead for <a href="https://xmagestore.com/"
+                                                    target="_blank">xMagestore.com</a></li>
+                                        </ul>
+                                        </p>
+                                        <p class="work-location">Noida, India</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item clearfix" data-aos="fade-up">
+                                    <div class="left-part">
+                                        <h5 class="item-period">March 2015 - December 2015</h5>
+                                        <span class="item-company">Kampuzz.com</span>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="right-part">
+                                        <h4 class="item-title">Career Counselor, Content Writer</h4>
+                                        <p class="work-location">Noida, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="credential-edc-exp credential-education">
+                            <h2 data-aos="fade-up">Education</h2>
+                            <div class="timeline timeline-second-style clearfix">
+                                <div class="timeline-item clearfix" data-aos="fade-up">
+                                    <div class="left-part">
+                                        <h5 class="item-period">2015</h5>
+                                        <span class="item-company">Rajasthan Technical University</span>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="right-part">
+                                        <h4 class="item-title">Bachelor of Technology (Computer Engineering)</h4>
+                                        <p>Aggregate: 78.78%</p>
+                                        <p class="education-location">Rajasthan, India</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item clearfix" data-aos="fade-up">
+                                    <div class="left-part">
+                                        <h5 class="item-period">2010</h5>
+                                        <span class="item-company">B.S.E.B. Patna</span>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="right-part">
+                                        <h4 class="item-title">12th Board (PCM)</h4>
+                                        <p>Total: 69.60%</p>
+                                        <p class="education-location">Patna, Bihar, India</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item clearfix" data-aos="fade-up">
+                                    <div class="left-part">
+                                        <h5 class="item-period">2008</h5>
+                                        <span class="item-company">B.S.E.B. Patna</span>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="right-part">
+                                        <h4 class="item-title">10th Board</h4>
+                                        <p>Total: 76.20%</p>
+                                        <p class="education-location">Patna, Bihar, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-wrap resume-skill-wrap">
+                            <h2 data-aos="fade-up">Skills</h2>
+                            <div class="d-grid gap-24 resume-skill-item flex-wrap">
+                                <h5 class="skill-list-heading" data-aos="zoom-in">Programming Languages & Tools</h5>
+                                <ul class="list-inline dev-icons" data-aos="zoom-in">
+                                    <li class="list-inline-item" title="Magento">
+                                        <i class="fab fa-magento"></i>
+                                    </li>
+                                    <li class="list-inline-item" title="PHP">
+                                        <i class="fab fa-php"></i>
+                                    </li>
+                                    <li class="list-inline-item" title="HTML">
+                                        <i class="fab fa-html5"></i>
+                                    </li>
+                                    <li class="list-inline-item" title="jQuery & JS">
+                                        <i class="fab fa-js-square"></i>
+                                    </li>
+                                    <li class="list-inline-item" title="GraphQL">
+                                        <i class="fab">
+
+                                            <svg xmlns="https://www.w3.org/2000/svg" height="52" width="52"
+                                                viewBox="0 0 29.999 30" fill="#9f9f9f">
+                                                <path d="M4.08 22.864l-1.1-.636L15.248.98l1.1.636z" />
+                                                <path d="M2.727 20.53h24.538v1.272H2.727z" />
+                                                <path
+                                                    d="M15.486 28.332L3.213 21.246l.636-1.1 12.273 7.086zm10.662-18.47L13.874 2.777l.636-1.1 12.273 7.086z" />
+                                                <path d="M3.852 9.858l-.636-1.1L15.5 1.67l.636 1.1z" />
+                                                <path
+                                                    d="M25.922 22.864l-12.27-21.25 1.1-.636 12.27 21.25zM3.7 7.914h1.272v14.172H3.7zm21.328 0H26.3v14.172h-1.272z" />
+                                                <path d="M15.27 27.793l-.555-.962 10.675-6.163.555.962z" />
+                                                <path
+                                                    d="M27.985 22.5a2.68 2.68 0 0 1-3.654.981 2.68 2.68 0 0 1-.981-3.654 2.68 2.68 0 0 1 3.654-.981c1.287.743 1.724 2.375.98 3.654M6.642 10.174a2.68 2.68 0 0 1-3.654.981A2.68 2.68 0 0 1 2.007 7.5a2.68 2.68 0 0 1 3.654-.981 2.68 2.68 0 0 1 .981 3.654M2.015 22.5a2.68 2.68 0 0 1 .981-3.654 2.68 2.68 0 0 1 3.654.981 2.68 2.68 0 0 1-.981 3.654c-1.287.735-2.92.3-3.654-.98m21.343-12.326a2.68 2.68 0 0 1 .981-3.654 2.68 2.68 0 0 1 3.654.981 2.68 2.68 0 0 1-.981 3.654 2.68 2.68 0 0 1-3.654-.981M15 30a2.674 2.674 0 1 1 2.674-2.673A2.68 2.68 0 0 1 15 30m0-24.652a2.67 2.67 0 0 1-2.674-2.674 2.67 2.67 0 1 1 5.347 0A2.67 2.67 0 0 1 15 5.347" />
+                                            </svg>
+                                        </i>
+                                    </li>
+                                    <li class="list-inline-item" title="LESS">
+                                        <i class="fab fa-less"></i>
+                                    </li>
+                                    <li class="list-inline-item" title="CSS">
+                                        <i class="fab fa-css3-alt"></i>
+                                    </li>
+                                    <li class="list-inline-item" title="Git">
+                                        <i class="fab fa-git"></i>
+                                    </li>
+                                    <li class="list-inline-item" title="Docker">
+                                        <i class="fab fa-docker"></i>
+                                    </li>
+                                    <li class="list-inline-item" title="Photoshop">
+                                        <i class="fab">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="52"
+                                                height="52" x="0" y="0" viewBox="0 0 17.469 17.469"
+                                                style="enable-background:new 0 0 52 52" xml:space="preserve" class="">
+                                                <g>
+                                                    <g xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <path style=""
+                                                                d="M5.925,4.982c-0.442,0-0.742,0.043-0.898,0.087v2.841C5.213,7.952,5.44,7.966,5.754,7.966    c1.157,0,1.871-0.585,1.871-1.571C7.624,5.511,7.01,4.982,5.925,4.982z"
+                                                                fill="#9f9f9f" data-original="#030104" class="" />
+                                                            <path style=""
+                                                                d="M16.4,0.002H1.07C0.479,0.002,0,0.48,0,1.069v15.329c0,0.59,0.479,1.069,1.07,1.069H16.4    c0.59,0,1.069-0.479,1.069-1.069V1.07C17.469,0.48,16.99,0.002,16.4,0.002z M8.894,8.624c-0.741,0.7-1.842,1.014-3.125,1.014    c-0.287,0-0.543-0.014-0.743-0.043v3.442H2.869V3.541C3.54,3.428,4.482,3.342,5.811,3.342c1.341,0,2.299,0.256,2.94,0.771    c0.617,0.486,1.03,1.286,1.03,2.228S9.466,8.08,8.894,8.624z M12.145,13.179c-0.916,0-1.729-0.198-2.258-0.485l0.385-1.556    c0.4,0.241,1.229,0.527,1.873,0.527c0.655,0,0.927-0.228,0.927-0.586c0-0.356-0.214-0.527-1.027-0.799    c-1.442-0.485-2-1.271-1.986-2.099c0-1.298,1.114-2.286,2.842-2.286c0.814,0,1.542,0.187,1.97,0.4l-0.385,1.5    c-0.314-0.172-0.913-0.399-1.514-0.399c-0.527,0-0.826,0.214-0.826,0.571c0,0.328,0.269,0.499,1.126,0.8    c1.328,0.456,1.886,1.128,1.899,2.154C15.171,12.222,14.141,13.179,12.145,13.179z"
+                                                                fill="#9f9f9f" data-original="#030104" class="" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </i>
+                                    </li>
+                                    <li class="list-inline-item" title="Lightroom">
+                                        <i class="fab">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="52"
+                                                height="52" x="0" y="0" viewBox="0 0 512 512"
+                                                style="enable-background:new 0 0 52 52" xml:space="preserve" class="">
+                                                <g>
+                                                    <g xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <path
+                                                                d="M467,0H45C20.186,0,0,20.186,0,45v422c0,24.814,20.186,45,45,45h422c24.814,0,45-20.186,45-45V45    C512,20.186,491.814,0,467,0z M256,391H136c-8.291,0-15-6.709-15-15V136c0-8.291,6.709-15,15-15s15,6.709,15,15v225h105    c8.291,0,15,6.709,15,15C271,384.291,264.291,391,256,391z M376,241c-24.814,0-45,20.186-45,45v90c0,8.291-6.709,15-15,15    c-8.291,0-15-6.709-15-15V226c0-8.291,6.709-15,15-15c8.291,0,15,6.709,15,15v0.383C343.574,216.865,359.052,211,376,211    c8.291,0,15,6.709,15,15S384.291,241,376,241z"
+                                                                fill="#9f9f9f" data-original="#000000" style=""
+                                                                class="" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </i>
+                                    </li>
+                                </ul>
+
+                                <h5 class="skill-list-heading" data-aos="zoom-in">Operating Systems</h5>
+                                <ul class="list-inline dev-icons" data-aos="zoom-in">
+                                    <li class="list-inline-item" title="Linux">
+                                        <i class="fab fa-linux"></i>
+                                    </li>
+                                    <li class="list-inline-item" title="Windows">
+                                        <i class="fab fa-windows"></i>
+                                    </li>
+                                    <li class="list-inline-item" title="Mac">
+                                        <i class="fab fa-apple"></i>
+                                    </li>
+                                    <li class="list-inline-item" title="Android">
+                                        <i class="fab fa-android"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="skills-wrap knowledges-wrap">
+                            <h2 data-aos="fade-up">Knowledges</h2>
+                            <div class="d-grid knowledges-skill-item gap-24 flex-wrap" data-aos="zoom-in">
+                                <ul class="knowledges">
+                                    <li>Magento</li>
+                                    <li>GraphQl</li>
+                                    <li>RESTful API</li>
+                                    <li>Web Design</li>
+                                    <li>ERP</li>
+                                    <li>MySQL</li>
+                                    <li>Git</li>
+                                    <li>Asana/BaseCamp/JIRA</li>
+                                    <li>Team management</li>
+                                    <li>Problem-Solving</li>
+                                    <li>Social Networking</li>
+                                    <li>Flexibility</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="skills-wrap awards-wrap">
+                            <h2 data-aos="fade-up">Certificates</h2>
+                            <div class="d-grid skill-items gap-24 flex-wrap">
+                                <div class="certificate-item-container" data-aos="zoom-in">
+                                    <div class="certificate-item clearfix">
+                                      <a href="./assets/pdf/Microsoft_Certified_Professional_Certificate_0.pdf" target="_blank"><img
+                                          src="./assets/images/MCP.webp" style="max-height: 100px;" alt="Microsoft Certified Professional"
+                                          title="Microsoft Certified Professional" class="img-responsive" /></a>
+                                    </div>
+                                  </div>
+                  
+                                  <div class="certificate-item-container" data-aos="zoom-in">
+                                    <div class="certificate-item clearfix">
+                                      <a href="https://www.credly.com/badges/301c0285-0862-4241-8321-ee3405785d46/public_url" target="_blank"><img
+                                          src="./assets/images/Adobe_Certified_Professional_Adobe_Commerce_Developer_badge_white.webp" style="max-height: 100px;" alt="Adobe Certified Professional—Adobe Commerce Developer"
+                                          title="Adobe Certified Professional—Adobe Commerce Developer" class="img-responsive" /></a>
+                                    </div>
+                                  </div>
+
+                            </div>
+                        </div>
+
+                        <div class="skills-wrap awards-wrap">
+                            <h2 data-aos="fade-up">Summary</h2>
+                            <div class="col-md-12" data-aos="fade-up">
+                                <div class="about-client-box info-box shadow-box" title="Resume">
+                                    <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
+                                    <div class="clients d-flex align-items-start gap-24 justify-content-center">
+                                        <div class="client-item">
+                                            <h1>9+</h1>
+                                            <p>Years <br>Experience</p>
+                                        </div>
+                                        <div class="client-item">
+                                            <h1>50+</h1>
+                                            <p>Total <br>Projects</p>
+                                        </div>
+                                        <div class="client-item">
+                                            <a href="https://www.linkedin.com/in/manishjoy/" target="_blank" title="LinkedIn">
+                                                <h1><img src="./assets/images/icon.svg" alt="Button"></h1>
+                                                <p>Know <br>More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Footer -->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="footer-content text-center">
+                    <a href="./index.html" class="logo">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </a>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="works.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <p class="copyright">
+                        &copy;
+                        <span id="copyright">
+                            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                        </span>
+                        <span><a href="https://www.linkedin.com/in/manishjoy/" title="Manish Joy" target="_blank">Manish
+                                Joy</a></span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <script src="./assets/js/jquery-3.6.4.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

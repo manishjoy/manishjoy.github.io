@@ -3,7 +3,7 @@
     
         //On Window load & Resize
         $(window).on('load', function() { //Load
-            $.get("https://www.manishjoy.com/blogs.json", function(data, status){
+            $.get("https://author.themagentoblog.com/blogs.json", function(data, status){
                 var blogHtml = "";
                 for(var i = 0; i < data.length; i++){
                     // console.log(data[i]);

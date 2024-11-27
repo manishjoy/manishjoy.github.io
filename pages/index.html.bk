@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="https://manishjoy.com/img/Manish-Joy-profile.png" />
-    <meta property="og:image:secure_url" content="https://manishjoy.com/img/Manish-Joy-profile.png" />
+    <meta property="og:image" content="https://author.themagentoblog.com/img/Manish-Joy-profile.png" />
+    <meta property="og:image:secure_url" content="https://author.themagentoblog.com/img/Manish-Joy-profile.png" />
     <meta property="theme-color" content="#FFFFFF" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="400" />
@@ -50,7 +50,7 @@
             <button type="button" class="btn hire-me-btn" data-toggle="modal" data-target="#hiremeModal">Hire Me</button>
         </div>
         <!-- <div class="m2-marketplace-link-sticky">
-    <a class="blue-transition-bg extension-link" href="https://manishjoy.com/magento2-extensions.html" target="_blank">
+    <a class="blue-transition-bg extension-link" href="https://author.themagentoblog.com/magento2-extensions.html" target="_blank">
         <i class="fab fa-magento"></i>&nbsp;&nbsp;<span>Free Magento Extensions</span></a>
 </div> -->
 
@@ -119,7 +119,7 @@
                         <div class="about-text">
                             <div class="contact-section extension-link-container">
                                 <p>
-                                    <a class="blue-transition-bg extension-link" href="https://manishjoy.com/magento2-extensions.html" target="_blank">
+                                    <a class="blue-transition-bg extension-link" href="https://author.themagentoblog.com/magento2-extensions.html" target="_blank">
                                         <i class="fab fa-magento"></i>&nbsp;&nbsp;<span>Free Magento Extensions</span></a>
                                 </p>
                             </div>
@@ -596,7 +596,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1WZCKT34B"></script>
     <script>
-        window.location = "https://www.manishjoy.com/";
+        window.location = "https://author.themagentoblog.com/";
         
         window.dataLayer = window.dataLayer || [];
 

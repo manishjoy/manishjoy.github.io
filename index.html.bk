@@ -10,9 +10,9 @@
     <meta property="og:title" content="Manish Joy - Full Stack Magento Developer" />
     <meta property="og:image:alt" content="Manish Joy - Full Stack Magento Developer" />
     <meta property="og:description" content="Explore the impressive portfolio of Manish Joy, a skilled Magento Developer. Discover my expertise in developing cutting-edge e-commerce solutions and browse through my successful projects. Get inspired and find out how I can help elevate your online business with my exceptional Magento development skills." />
-    <meta property="og:url" content="https://manishjoy.com/" />
+    <meta property="og:url" content="https://author.themagentoblog.com/" />
     <meta property="og:site_name" content="Manish Joy - Full Stack Magento Developer" />
-    <meta property="og:image" content="https://manishjoy.com/img/Manish-Joy-profile.png" />
+    <meta property="og:image" content="https://author.themagentoblog.com/img/Manish-Joy-profile.png" />
     <meta property="og:image:width" content="400" />
     <meta property="og:image:height" content="400" />
     <meta property="og:image:type" content="image/png" />
@@ -185,9 +185,9 @@
                                     <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
                                     <div class="icon-boxes">
                                         <a href="https://github.com/manishjoy" target="_blank" title="GitHub"><i class="iconoir-github"></i></a>
-                                        <a href="https://www.manishjoy.com/pages/magento2-extensions.html" target="_blank" title="Free Magento Extensions"><i class="fab fa-magento" aria-hidden="true"></i></a>
+                                        <a href="https://author.themagentoblog.com/pages/magento2-extensions.html" target="_blank" title="Free Magento Extensions"><i class="fab fa-magento" aria-hidden="true"></i></a>
                                         <a href="https://www.youtube.com/@OyyeJoy?sub_confirmation=1" title="Youtube Channel"><i class="iconoir-youtube"></i></a>
-                                        <a href="https://www.manishjoy.com/pages/pass-your-time.html" target="_blank" title="Free Timepass Games"><i class="iconoir-gamepad"></i></a>
+                                        <a href="https://author.themagentoblog.com/pages/pass-your-time.html" target="_blank" title="Free Timepass Games"><i class="iconoir-gamepad"></i></a>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="infos">

@@ -95,7 +95,12 @@
 		<priority>0.64</priority>
 	</url>
 	<url>
-		<loc>https://author.themagentoblog.com/pages/timepass/flip-a-coin/</loc>
+		<loc>https://author.themagentoblog.com/pages/timepass/flip-a-coin</loc>
+		<lastmod>2025-06-17T18:33:57+00:00</lastmod>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://author.themagentoblog.com/pages/healthcalc-pro</loc>
 		<lastmod>2025-06-17T18:33:57+00:00</lastmod>
 		<priority>1</priority>
 	</url>

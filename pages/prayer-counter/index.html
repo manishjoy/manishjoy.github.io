@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prayer Counter</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      padding: 20px;
+      color: #111827;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .icon-img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    .prayer-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .counter {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      margin: 5px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .increment {
+      background-color: #3b82f6;
+      color: white;
+    }
+
+    .increment:hover {
+      background-color: #2563eb;
+    }
+
+    .reset {
+      background-color: #f87171;
+      color: white;
+    }
+
+    .reset:hover {
+      background-color: #ef4444;
+    }
+
+    #reset-all {
+      background-color: #6b7280;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      margin: 30px auto 0;
+      display: block;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    #reset-all:hover {
+      background-color: #4b5563;
+    }
+  </style>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#3b82f6" />
+</head>
+
+<body>
+  <div id="app" style="display: none;">
+    <h1>🙏 Prayer Counter</h1>
+
+    <div class="container">
+
+      <!-- Lord’s Prayer - Jesus -->
+      <div class="card">
+        <img src="./images/jesus.png" alt="Jesus Icon" class="icon-img" />
+        <div class="prayer-title">The Lord’s Prayer</div>
+        <div id="count1" class="counter">Count: 0</div>
+        <button class="btn increment" onclick="incrementCounter(1)">+1</button>
+        <button class="btn reset" onclick="resetCounter(1)">Reset</button>
+      </div>
+
+      <!-- Hail Mary - Mary -->
+      <div class="card">
+        <img src="./images/mary.png" alt="Mary Icon" class="icon-img" />
+        <div class="prayer-title">Hail Mary</div>
+        <div id="count2" class="counter">Count: 0</div>
+        <button class="btn increment" onclick="incrementCounter(2)">+1</button>
+        <button class="btn reset" onclick="resetCounter(2)">Reset</button>
+      </div>
+
+      <!-- Glory Be - Holy Spirit (Dove) -->
+      <div class="card">
+        <img src="./images/dove.png" alt="Holy Spirit Icon" class="icon-img" />
+        <div class="prayer-title">Glory Be</div>
+        <div id="count3" class="counter">Count: 0</div>
+        <button class="btn increment" onclick="incrementCounter(3)">+1</button>
+        <button class="btn reset" onclick="resetCounter(3)">Reset</button>
+      </div>
+
+    </div>
+
+    <button id="reset-all" onclick="resetAllCounters()">🔁 Reset All</button>
+  </div>
+
+  <script>
+    const storedHash = "ebc7998126ef71e7d1b8e33ad262150833078b3bc1f493d0692599d80082a7dc"; // SHA-256 of: mypass123
+
+    async function sha256(text) {
+      const encoder = new TextEncoder();
+      const data = encoder.encode(text);
+      const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    async function checkAccess() {
+      const input = prompt("Enter password to access your prayer tracker:");
+      if (!input) {
+        alert("No password entered. Exiting.");
+        document.body.innerHTML = "<h2 style='text-align:center;color:#dc2626;margin-top:100px;'>⛔ Access Denied</h2>";
+        return;
+      }
+      const hashed = await sha256(input.trim());
+      if (hashed === storedHash) {
+        document.getElementById("app").style.display = "block";
+        updateDisplay();
+      } else {
+        alert("❌ Incorrect password.");
+        document.body.innerHTML = "<h2 style='text-align:center;color:#dc2626;margin-top:100px;'>⛔ Access Denied</h2>";
+      }
+    }
+
+    checkAccess();
+
+    // Load from localStorage or initialize to 0
+    let counters = [
+      parseInt(localStorage.getItem("prayer1")) || 0,
+      parseInt(localStorage.getItem("prayer2")) || 0,
+      parseInt(localStorage.getItem("prayer3")) || 0
+    ];
+
+    function updateDisplay() {
+      document.getElementById("count1").innerText = "Count: " + counters[0];
+      document.getElementById("count2").innerText = "Count: " + counters[1];
+      document.getElementById("count3").innerText = "Count: " + counters[2];
+    }
+
+    function incrementCounter(index) {
+      counters[index - 1]++;
+      localStorage.setItem("prayer" + index, counters[index - 1]);
+      updateDisplay();
+    }
+
+    function resetCounter(index) {
+      counters[index - 1] = 0;
+      localStorage.setItem("prayer" + index, 0);
+      updateDisplay();
+    }
+
+    function resetAllCounters() {
+      counters = [0, 0, 0];
+      for (let i = 1; i <= 3; i++) {
+        localStorage.setItem("prayer" + i, 0);
+      }
+      updateDisplay();
+    }
+
+    updateDisplay();
+
+    /* To Has new password */
+    /*
+      async function hashPassword(password) {
+        const encoder = new TextEncoder();
+        const data = encoder.encode(password);
+        const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        console.log(hashArray.map(b => b.toString(16).padStart(2, '0')).join(''));
+      }
+
+      hashPassword("your-secret-password");
+
+    */
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log("✅ Service Worker registered"))
+        .catch(err => console.error("❌ Service Worker failed", err));
+    }
+  </script>
+
+</body>
+
+</html>

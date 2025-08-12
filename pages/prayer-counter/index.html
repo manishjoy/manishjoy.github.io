@@ -163,7 +163,7 @@
     }
 
     async function checkAccess() {
-      const input = prompt("Enter password to access your prayer tracker:");
+      /* const input = prompt("Enter password to access your prayer tracker:");
       if (!input) {
         alert("No password entered. Exiting.");
         document.body.innerHTML = "<h2 style='text-align:center;color:#dc2626;margin-top:100px;'>⛔ Access Denied</h2>";
@@ -176,7 +176,9 @@
       } else {
         alert("❌ Incorrect password.");
         document.body.innerHTML = "<h2 style='text-align:center;color:#dc2626;margin-top:100px;'>⛔ Access Denied</h2>";
-      }
+      } */
+      document.getElementById("app").style.display = "block";
+      updateDisplay();
     }
 
     checkAccess();
